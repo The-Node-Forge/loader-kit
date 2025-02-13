@@ -6,8 +6,7 @@ sidebar_position: 1
 
 # Documentation Index
 
-Welcome to the documentation for **loader-kit**. Below is a list of available
-guides:
+Welcome to the documentation for **loader-kit**. Below is a list of available guides:
 
 ## Description
 
