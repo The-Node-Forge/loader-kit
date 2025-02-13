@@ -1,6 +1,6 @@
 <div align="center">
    
-# loader-kit
+# Loader-kit
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Documentation](https://the-node-forge.github.io/loader-kit/)

@@ -1,9 +1,13 @@
-[**@the-node-forge/my-npm-package**](README.md)
+[**@the-node-forge/loader-kit**](README.md)
 
----
+***
 
-# @the-node-forge/my-npm-package
+# @the-node-forge/loader-kit
+
+## Classes
+
+- [Loader](classes/Loader.md)
 
 ## Functions
 
-- [greet](functions/greet.md)
+- [createLoader](functions/createLoader.md)
