@@ -1,5 +1,5 @@
 {
-  "name": "@the-node-forge/my-npm-package",
+  "name": "@the-node-forge/loader-kit",
   "version": "1.0.0",
   "description": "A fully-configured TypeScript NPM package template with built-in CI/CD, automated tests, ESLint, Prettier, and Docusaurus documentation. Get started quickly with best practices for package development",
   "main": "src/index.ts",
@@ -22,10 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Node-Forge/npm-template"
+    "url": "https://github.com/The-Node-Forge/loader-kit"
   },
   "keywords": [
-    "express",
+    "loader",
+    "progress bar",
+    "spinner",
+    "loading indicator",
+    "customizable",
     "typescript",
     "npm-package"
   ],

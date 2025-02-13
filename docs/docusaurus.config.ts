@@ -8,11 +8,11 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://the-node-forge.github.io',
-  baseUrl: '/npm-template/',
+  baseUrl: '/loader-kit/',
   trailingSlash: false,
 
   organizationName: 'The-Node-Forge',
-  projectName: 'npm-template', // Edit
+  projectName: 'loader-kit', // Edit
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -29,7 +29,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/The-Node-Forge/npm-template/tree/main/docs/',
+          editUrl: 'https://github.com/The-Node-Forge/loader-kit/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -37,7 +37,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/The-Node-Forge/npm-template/tree/main/docs/',
+          editUrl: 'https://github.com/The-Node-Forge/loader-kit/tree/main/docs/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -65,16 +65,16 @@ const config: Config = {
           label: 'Docs',
         },
 
-        {
-          type: 'docSidebar',
-          sidebarId: 'apiSidebar',
-          position: 'left',
-          label: 'API',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'apiSidebar',
+        //   position: 'left',
+        //   label: 'API',
+        // },
         // uncomment to enable blogs
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/The-Node-Forge/npm-template',
+          href: 'https://github.com/The-Node-Forge/loader-kit',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,7 +97,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/The-Node-Forge/npm-template',
+              href: 'https://github.com/The-Node-Forge/loader-kit',
             },
           ],
         },
