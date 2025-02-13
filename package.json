@@ -1,10 +1,11 @@
 {
   "name": "@the-node-forge/loader-kit",
   "version": "1.0.0",
-  "description": "A fully-configured TypeScript NPM package template with built-in CI/CD, automated tests, ESLint, Prettier, and Docusaurus documentation. Get started quickly with best practices for package development",
-  "main": "src/index.ts",
+  "description": "Loader-Kit is a lightweight, customizable JavaScript library designed to add beautiful loading indicators to your web applications. Featuring multiple loader types—including spinners, progress bars, and dot loaders—Loader-Kit leverages vanilla JavaScript and smooth CSS animations to deliver dynamic, responsive loading states with minimal overhead. Easily configurable for size, color, and style, this library offers a simple API that integrates seamlessly into any project, enhancing user experience during asynchronous operations. Perfect for developers seeking a flexible, high-performance solution to improve perceived performance and user engagement.",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "demo": "parcel example/index.html",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -53,6 +54,8 @@
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^15.14.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "parcel": "^2.13.3",
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "typedoc": "^0.27.6",

@@ -4,39 +4,49 @@ description: API parameters, returns, examples.
 sidebar_position: 4
 ---
 
-### `functionName(param1, param2)`
+### `createLoader(options)`
 
-Description of function.
+Creates and returns a new loader instance.
 
 **Parameters:**
 
-- `param1` - Type - Description
-- `param2` - Type - Description
+- `options` - `LoaderOptions` - An object containing loader configuration.
 
 **Returns:**
 
-- Return Type - Description
+- `Loader` - A loader instance with start, stop, and update methods.
 
 **Examples:**
 
 ```js
-functionName(arg1, arg2);
+const loader = createLoader({
+  type: 'spinner',
+  size: 50,
+  color: '#FF5733',
+  container: document.body,
+});
 ```
 
 ```js
-const { greet } = require('./packageName');
+const { createLoader } = require('@the-node-forge/loader-kit');
 
-console.log(greet('Charlie')); // Output: Hello, Charlie!
+const loader = createLoader({ type: 'progress', size: 60, color: '#00FF00' });
+loader.start();
 ```
 
 ```js
-import React from 'react';
-import { greet } from './packageName';
+import React, { useEffect } from 'react';
+import { createLoader } from '@the-node-forge/loader-kit';
 
-const Greeting: React.FC<{ name: string }> = ({ name }) => {
-  return <h1>{greet(name)}</h1>;
+const LoaderComponent = () => {
+  useEffect(() => {
+    const loader = createLoader({ type: 'dots', size: 40, color: '#0000FF' });
+    loader.start();
+    return () => loader.stop();
+  }, []);
+
+  return <div id="loader-container"></div>;
 };
 
-export default Greeting;
-
+export default LoaderComponent;
 ```
