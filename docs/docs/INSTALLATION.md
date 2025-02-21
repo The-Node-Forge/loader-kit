@@ -6,13 +6,11 @@ sidebar_position: 2
 
 ### Prerequisites
 
-- Node.js version X.X.X
+- **Node.js version 16 or higher**
 - npm or yarn
 
 ### Installation Steps
 
 ```sh
-npm install package-name
+npm install @the-node-forge/loader-kit
 ```
-
-For more details, see [USAGE.md](USAGE.md).

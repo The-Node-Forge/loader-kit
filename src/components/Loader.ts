@@ -1,5 +1,4 @@
-// src/components/Loader.ts
-
+/* eslint-disable space-before-function-paren */
 /**
  * Options for configuring the loader.
  */
@@ -11,7 +10,7 @@ export interface LoaderOptions {
   type: 'spinner' | 'progress' | 'dots';
   /**
    * Size of the loader in pixels.
-   * Defaults to 36 (spinner) or calculated based on type.
+   * Defaults to DEFAULT_SIZE (spinner) or calculated based on type.
    */
   size?: number;
   /**
@@ -25,6 +24,11 @@ export interface LoaderOptions {
   container?: HTMLElement;
 }
 
+const DEFAULT_SIZE = 36;
+const MIN_PROGRESS_HEIGHT = 4;
+const DOT_COUNT = 3;
+const PROGRESS_DIVISOR = 9;
+
 /**
  * Loader class handles creation and control of loading indicators.
  */
@@ -33,12 +37,11 @@ export class Loader {
   private options: LoaderOptions;
 
   constructor(options: LoaderOptions) {
-    // Apply default values if not provided.
     const defaultOptions: LoaderOptions = {
       type: options.type,
-      size: options.size || 36,
-      color: options.color || '#09f',
-      container: options.container || document.body,
+      size: options.size ?? DEFAULT_SIZE,
+      color: options.color ?? '#09f',
+      container: options.container ?? document.body,
     };
     this.options = defaultOptions;
     this.loaderElement = this.createLoaderElement();
@@ -49,12 +52,9 @@ export class Loader {
    */
   private createLoaderElement(): HTMLElement {
     const loader = document.createElement('div');
-    loader.classList.add('loader'); // Base loader class
-
-    // Set the primary color using an inline CSS variable.
+    loader.classList.add('loader');
     loader.style.setProperty('--loader-color', this.options.color as string);
 
-    // Create loader based on type.
     switch (this.options.type) {
       case 'spinner':
         loader.classList.add('loader-spinner');
@@ -63,19 +63,16 @@ export class Loader {
         break;
       case 'progress':
         loader.classList.add('loader-progress');
-        // Use size to determine the height of the progress bar.
-        loader.style.height = `${Math.max(4, this.options.size! / 9)}px`;
+        loader.style.height = `${Math.max(MIN_PROGRESS_HEIGHT, this.options.size! / PROGRESS_DIVISOR)}px`;
         break;
       case 'dots':
         loader.classList.add('loader-dots');
-        // For the dots loader, create child elements (three dots).
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < DOT_COUNT; i++) {
           const dot = document.createElement('span');
           loader.appendChild(dot);
         }
         break;
       default:
-        // Fallback to spinner if the type is unknown.
         loader.classList.add('loader-spinner');
         loader.style.width = `${this.options.size}px`;
         loader.style.height = `${this.options.size}px`;
@@ -97,25 +94,20 @@ export class Loader {
    * Stops the loader by removing it from the DOM.
    */
   public stop(): void {
-    if (this.loaderElement.parentElement) {
-      this.loaderElement.parentElement.removeChild(this.loaderElement);
-    }
+    this.loaderElement.remove();
   }
 
   /**
    * Updates the loader with new configuration options.
-   * @param options Partial options to update the loader.
+   * @param _options Partial options to update the loader.
    */
-  public update(options: Partial<LoaderOptions>): void {
-    // Merge the new options.
-    this.options = { ...this.options, ...options };
+  public update(_options: Partial<LoaderOptions>): void {
+    this.options = { ...this.options, ..._options };
 
-    // If the color is updated, change the inline CSS variable.
-    if (options.color) {
-      this.loaderElement.style.setProperty('--loader-color', options.color);
+    if (_options.color) {
+      this.loaderElement.style.setProperty('--loader-color', _options.color);
     }
 
-    // For updates like type or size, recreate the loader element.
     this.stop();
     this.loaderElement = this.createLoaderElement();
     this.start();
@@ -124,9 +116,8 @@ export class Loader {
 
 /**
  * Factory function to create a new loader instance.
- * @param options Loader configuration options.
+ * @param _options Loader configuration options.
  * @returns A new Loader instance.
  */
-export const createLoader = (options: LoaderOptions): Loader => {
-  return new Loader(options);
-};
+export const createLoader = (_options: LoaderOptions): Loader =>
+  new Loader(_options);

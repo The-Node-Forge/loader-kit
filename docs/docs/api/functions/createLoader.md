@@ -1,14 +1,14 @@
 # Function: createLoader()
 
-> **createLoader**(`options`): [`Loader`](../classes/Loader.md)
+> **createLoader**(`_options`): [`Loader`](../classes/Loader.md)
 
-Defined in: [Loader.ts:130](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L130)
+Defined in: [Loader.ts:122](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L122)
 
 Factory function to create a new loader instance.
 
 ## Parameters
 
-### options
+### \_options
 
 `LoaderOptions`
 

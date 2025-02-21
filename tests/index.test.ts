@@ -2,12 +2,23 @@
  * @jest-environment jsdom
  */
 
+/* eslint-env jest */
+
 import { createLoader } from '../src/index';
 
 describe('Loader Kit', () => {
   let container: HTMLElement;
 
+  // Move constants inside the describe block to avoid ESLint errors
+  const MIN_HEIGHT = 4;
+  const PROGRESS_DIVISOR = 9;
+  const DOT_COUNT = 3;
+  const DIVIDED_BY = 45;
+  const EXPECTED_SIZE_FORTY = 40;
+  const EXPECTED_SIZE_FIFTY = 50;
+
   beforeEach(() => {
+    // Ensure document is properly defined
     container = document.createElement('div');
     container.id = 'test-container';
     document.body.appendChild(container);
@@ -31,8 +42,8 @@ describe('Loader Kit', () => {
     loader.start();
     const loaderEl = container.querySelector('.loader-spinner') as HTMLElement;
     expect(loaderEl).not.toBeNull();
-    expect(loaderEl.style.width).toBe('40px');
-    expect(loaderEl.style.height).toBe('40px');
+    expect(loaderEl.style.width).toBe(`${EXPECTED_SIZE_FORTY}px`);
+    expect(loaderEl.style.height).toBe(`${EXPECTED_SIZE_FORTY}px`);
   });
 
   it('should remove the loader from the container when stopped', () => {
@@ -67,8 +78,8 @@ describe('Loader Kit', () => {
       '.loader-spinner',
     ) as HTMLElement;
     expect(updatedLoaderEl).not.toBeNull();
-    expect(updatedLoaderEl.style.width).toBe('50px');
-    expect(updatedLoaderEl.style.height).toBe('50px');
+    expect(updatedLoaderEl.style.width).toBe(`${EXPECTED_SIZE_FIFTY}px`);
+    expect(updatedLoaderEl.style.height).toBe(`${EXPECTED_SIZE_FIFTY}px`);
     expect(updatedLoaderEl.style.getPropertyValue('--loader-color')).toBe('#00ff00');
   });
 
@@ -82,7 +93,7 @@ describe('Loader Kit', () => {
     loader.start();
     const loaderEl = container.querySelector('.loader-progress') as HTMLElement;
     expect(loaderEl).not.toBeNull();
-    const expectedHeight = Math.max(4, 45 / 9) + 'px';
+    const expectedHeight = `${Math.max(MIN_HEIGHT, DIVIDED_BY / PROGRESS_DIVISOR)}px`;
     expect(loaderEl.style.height).toBe(expectedHeight);
   });
 
@@ -95,6 +106,6 @@ describe('Loader Kit', () => {
     const loaderEl = container.querySelector('.loader-dots') as HTMLElement;
     expect(loaderEl).not.toBeNull();
     const dots = loaderEl.querySelectorAll('span');
-    expect(dots.length).toBe(3);
+    expect(dots.length).toBe(DOT_COUNT);
   });
 });

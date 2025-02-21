@@ -1,52 +1,28 @@
----
-title: API Reference
-description: API parameters, returns, examples.
-sidebar_position: 4
----
+## ✅ **API Reference**
 
-### `createLoader(options)`
+### **Loader Class**
 
-Creates and returns a new loader instance.
-
-**Parameters:**
-
-- `options` - `LoaderOptions` - An object containing loader configuration.
-
-**Returns:**
-
-- `Loader` - A loader instance with start, stop, and update methods.
-
-**Examples:**
-
-```js
-const loader = createLoader({
-  type: 'spinner',
-  size: 50,
-  color: '#FF5733',
-  container: document.body,
-});
+```typescript
+new Loader(options: LoaderOptions);
 ```
 
-```js
-const { createLoader } = require('@the-node-forge/loader-kit');
+| Parameter   | Type                                    | Description                                                                 |
+| ----------- | --------------------------------------- | --------------------------------------------------------------------------- |
+| `type`      | `'spinner'` \| `'progress'` \| `'dots'` | The type of loader to display.                                              |
+| `size`      | `number`                                | Size of the loader in pixels (default is 36 for spinner).                   |
+| `color`     | `string`                                | Primary color for the loader.                                               |
+| `container` | `HTMLElement`                           | The DOM element where the loader will be appended (default: document.body). |
 
-const loader = createLoader({ type: 'progress', size: 60, color: '#00FF00' });
-loader.start();
+#### **Methods**
+
+```typescript
+start(): void;
+stop(): void;
+update(options: Partial<LoaderOptions>): void;
 ```
 
-```js
-import React, { useEffect } from 'react';
-import { createLoader } from '@the-node-forge/loader-kit';
-
-const LoaderComponent = () => {
-  useEffect(() => {
-    const loader = createLoader({ type: 'dots', size: 40, color: '#0000FF' });
-    loader.start();
-    return () => loader.stop();
-  }, []);
-
-  return <div id="loader-container"></div>;
-};
-
-export default LoaderComponent;
-```
+| Method                                    | Returns | Description                                                    |
+| ----------------------------------------- | ------- | -------------------------------------------------------------- |
+| `start()`                                 | `void`  | Appends the loader to the DOM and starts its animation.        |
+| `stop()`                                  | `void`  | Removes the loader from the DOM.                               |
+| `update(options: Partial<LoaderOptions>)` | `void`  | Dynamically updates the loader with new configuration options. |

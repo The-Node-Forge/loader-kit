@@ -10,9 +10,10 @@ Welcome to the documentation for **loader-kit**. Below is a list of available gu
 
 ## Description
 
-**A fully-configured TypeScript NPM package template with built-in CI/CD, automated
-tests, ESLint, Prettier, and Docusaurus documentation. Get started quickly with best
-practices for package development**
+A **lightweight, customizable loader library** for JavaScript/TypeScript
+applications. Loader Kit provides beautiful and dynamic loading indicators—including
+spinners, progress bars, and dot loaders—with smooth CSS animations to enhance user
+experience during asynchronous operations.
 
 ### 📌 Getting Started
 
@@ -34,4 +35,4 @@ practices for package development**
 ---
 
 Need help? Check out our
-[Discussions](https://github.com/The-Node-Forge/{{REPO_NAME}}/discussions).
+[Discussions](https://github.com/The-Node-Forge/{{loader-kit}}/discussions).

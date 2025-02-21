@@ -6,7 +6,7 @@
 
 # Class: Loader
 
-Defined in: [Loader.ts:31](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L31)
+Defined in: [Loader.ts:35](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L35)
 
 Loader class handles creation and control of loading indicators.
 
@@ -16,7 +16,7 @@ Loader class handles creation and control of loading indicators.
 
 > **new Loader**(`options`): [`Loader`](Loader.md)
 
-Defined in: [Loader.ts:35](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L35)
+Defined in: [Loader.ts:39](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L39)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [Loader.ts:35](https://github.com/The-Node-Forge/loader-kit/blob/42c
 
 > **start**(): `void`
 
-Defined in: [Loader.ts:90](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L90)
+Defined in: [Loader.ts:87](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L87)
 
 Starts the loader by appending it to the specified container.
 
@@ -48,7 +48,7 @@ Starts the loader by appending it to the specified container.
 
 > **stop**(): `void`
 
-Defined in: [Loader.ts:99](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L99)
+Defined in: [Loader.ts:96](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L96)
 
 Stops the loader by removing it from the DOM.
 
@@ -60,15 +60,15 @@ Stops the loader by removing it from the DOM.
 
 ### update()
 
-> **update**(`options`): `void`
+> **update**(`_options`): `void`
 
-Defined in: [Loader.ts:109](https://github.com/The-Node-Forge/loader-kit/blob/42c9d4322a3d6fd5fbeb1f0444e5f0a7ef216b69/src/components/Loader.ts#L109)
+Defined in: [Loader.ts:104](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L104)
 
 Updates the loader with new configuration options.
 
 #### Parameters
 
-##### options
+##### \_options
 
 `Partial`\<`LoaderOptions`\>
 
