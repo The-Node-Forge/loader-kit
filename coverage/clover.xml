@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739470354226" clover="3.2.0">
-  <project timestamp="1739470354226" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="index.ts" path="/home/runner/work/loader-kit/loader-kit/src/index.ts">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-    </file>
+<coverage generated="1740099753909" clover="3.2.0">
+  <project timestamp="1740099753909" name="All files">
+    <metrics statements="42" coveredstatements="38" conditionals="14" coveredconditionals="12" methods="8" coveredmethods="7" elements="64" coveredelements="57" complexity="0" loc="42" ncloc="42" packages="2" files="2" classes="2"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.ts" path="/home/runner/work/loader-kit/loader-kit/src/index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="40" coveredstatements="36" conditionals="14" coveredconditionals="12" methods="6" coveredmethods="6"/>
+      <file name="Loader.ts" path="/home/runner/work/loader-kit/loader-kit/src/components/Loader.ts">
+        <metrics statements="40" coveredstatements="36" conditionals="14" coveredconditionals="12" methods="6" coveredmethods="6"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="58" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="81" count="6" type="stmt"/>
+        <line num="88" count="6" type="cond" truecount="3" falsecount="0"/>
+        <line num="89" count="6" type="stmt"/>
+        <line num="97" count="2" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="107" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="123" count="5" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
