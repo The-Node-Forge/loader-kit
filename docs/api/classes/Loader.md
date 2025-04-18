@@ -6,7 +6,7 @@
 
 # Class: Loader
 
-Defined in: [components/Loader.ts:28](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L28)
+Defined in: [components/Loader.ts:28](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L28)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [components/Loader.ts:28](https://github.com/The-Node-Forge/loader-k
 
 > **new Loader**(`options`): [`Loader`](Loader.md)
 
-Defined in: [components/Loader.ts:33](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L33)
+Defined in: [components/Loader.ts:33](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L33)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [components/Loader.ts:33](https://github.com/The-Node-Forge/loader-k
 
 > **setProgress**(`percent`): `void`
 
-Defined in: [components/Loader.ts:159](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L159)
+Defined in: [components/Loader.ts:159](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L159)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [components/Loader.ts:159](https://github.com/The-Node-Forge/loader-
 
 > **start**(): `void`
 
-Defined in: [components/Loader.ts:165](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L165)
+Defined in: [components/Loader.ts:165](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L165)
 
 #### Returns
 
@@ -62,7 +62,7 @@ Defined in: [components/Loader.ts:165](https://github.com/The-Node-Forge/loader-
 
 > **stop**(): `void`
 
-Defined in: [components/Loader.ts:171](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L171)
+Defined in: [components/Loader.ts:171](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L171)
 
 #### Returns
 
@@ -74,7 +74,7 @@ Defined in: [components/Loader.ts:171](https://github.com/The-Node-Forge/loader-
 
 > **update**(`_options`): `void`
 
-Defined in: [components/Loader.ts:175](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L175)
+Defined in: [components/Loader.ts:175](https://github.com/The-Node-Forge/loader-kit/blob/67e9c620c98df55d31c8678dd30febcf7f4eb6f9/src/components/Loader.ts#L175)
 
 #### Parameters
 

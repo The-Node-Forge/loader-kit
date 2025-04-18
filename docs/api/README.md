@@ -8,6 +8,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-007acc)
+
+[![NPM Version](https://img.shields.io/npm/v/@the-node-forge/loader-kit)](https://www.npmjs.com/package/@the-node-forge/loader-kit)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/the-node-forge/loader-kit/ci.yaml?branch=main)](https://github.com/The-Node-Forge/loader-kit/actions)
+![Platform](https://img.shields.io/badge/platform-browser%20%7C%20frameworks-brightgreen)
+
 [Live Documentation](https://the-node-forge.github.io/loader-kit/)
 
 </div>
