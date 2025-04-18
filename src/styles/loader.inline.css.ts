@@ -1,4 +1,4 @@
-/* Base loader styles */
+export const loaderCSS = `
 .loader {
   display: inline-block;
   position: relative;
@@ -27,16 +27,17 @@
   background-color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  border-radius: 4px;
 }
 
-.loader-progress::before {
-  content: '';
-  display: block;
+.loader-progress-fill {
   height: 100%;
   background-color: var(--loader-color, #09f);
   width: 0%;
-  animation: progress 4s linear infinite;
+  transition: width 0.3s ease;
+  border-radius: 4px;
 }
+
 
 @keyframes progress {
   0% {
@@ -87,3 +88,4 @@
     transform: scale(1);
   }
 }
+`;
