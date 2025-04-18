@@ -4,8 +4,7 @@
 
 /* eslint-env jest */
 
-import { createLoader } from '../src/index';
-import { Spinner } from '../src/index';
+import { createLoader, Spinner } from '../src/index';
 
 describe('Loader Kit', () => {
   let container: HTMLElement;
