@@ -1,6 +1,6 @@
 [**@the-node-forge/loader-kit**](README.md)
 
-***
+---
 
 # @the-node-forge/loader-kit
 
