@@ -1,28 +1,36 @@
-## ✅ **API Reference**
+## ✅ API Reference
 
-### **Loader Class**
+### Spinner
 
-```typescript
-new Loader(options: LoaderOptions);
+```ts
+Spinner.show(container?: HTMLElement, options?: {
+  color?: string;
+  size?: number;
+  position?: 'inline' | 'centered' | 'overlay';
+  style?: Partial<CSSStyleDeclaration>;
+})
+Spinner.hide()
 ```
 
-| Parameter   | Type                                    | Description                                                                 |
-| ----------- | --------------------------------------- | --------------------------------------------------------------------------- |
-| `type`      | `'spinner'` \| `'progress'` \| `'dots'` | The type of loader to display.                                              |
-| `size`      | `number`                                | Size of the loader in pixels (default is 36 for spinner).                   |
-| `color`     | `string`                                | Primary color for the loader.                                               |
-| `container` | `HTMLElement`                           | The DOM element where the loader will be appended (default: document.body). |
+### ProgressBar
 
-#### **Methods**
-
-```typescript
-start(): void;
-stop(): void;
-update(options: Partial<LoaderOptions>): void;
+```ts
+ProgressBar.start(container: HTMLElement | string, options?: {
+  color?: string;
+  size?: number;
+  style?: Partial<CSSStyleDeclaration>;
+})
+ProgressBar.set(percent: number)
+ProgressBar.complete()
 ```
 
-| Method                                    | Returns | Description                                                    |
-| ----------------------------------------- | ------- | -------------------------------------------------------------- |
-| `start()`                                 | `void`  | Appends the loader to the DOM and starts its animation.        |
-| `stop()`                                  | `void`  | Removes the loader from the DOM.                               |
-| `update(options: Partial<LoaderOptions>)` | `void`  | Dynamically updates the loader with new configuration options. |
+### Dots
+
+```ts
+Dots.show(container?: HTMLElement, options?: {
+  color?: string;
+  position?: 'inline' | 'centered' | 'overlay';
+  style?: Partial<CSSStyleDeclaration>;
+})
+Dots.hide()
+```

@@ -5,6 +5,7 @@
 /* eslint-env jest */
 
 import { createLoader } from '../src/index';
+import { Spinner } from '../src/index';
 
 describe('Loader Kit', () => {
   let container: HTMLElement;
@@ -107,5 +108,11 @@ describe('Loader Kit', () => {
     expect(loaderEl).not.toBeNull();
     const dots = loaderEl.querySelectorAll('span');
     expect(dots.length).toBe(DOT_COUNT);
+  });
+
+  it('Spinner.show should insert a loader into DOM', () => {
+    Spinner.show(document.body);
+    const loaderEl = document.body.querySelector('.loader-spinner');
+    expect(loaderEl).not.toBeNull();
   });
 });

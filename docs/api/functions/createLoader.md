@@ -1,6 +1,6 @@
 [**@the-node-forge/loader-kit**](../README.md)
 
----
+***
 
 [@the-node-forge/loader-kit](../globals.md) / createLoader
 
@@ -8,10 +8,7 @@
 
 > **createLoader**(`_options`): [`Loader`](../classes/Loader.md)
 
-Defined in:
-[Loader.ts:122](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L122)
-
-Factory function to create a new loader instance.
+Defined in: [components/Loader.ts:188](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L188)
 
 ## Parameters
 
@@ -19,10 +16,6 @@ Factory function to create a new loader instance.
 
 `LoaderOptions`
 
-Loader configuration options.
-
 ## Returns
 
 [`Loader`](../classes/Loader.md)
-
-A new Loader instance.

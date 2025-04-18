@@ -1,15 +1,12 @@
 [**@the-node-forge/loader-kit**](../README.md)
 
----
+***
 
 [@the-node-forge/loader-kit](../globals.md) / Loader
 
 # Class: Loader
 
-Defined in:
-[Loader.ts:35](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L35)
-
-Loader class handles creation and control of loading indicators.
+Defined in: [components/Loader.ts:28](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L28)
 
 ## Constructors
 
@@ -17,8 +14,7 @@ Loader class handles creation and control of loading indicators.
 
 > **new Loader**(`options`): [`Loader`](Loader.md)
 
-Defined in:
-[Loader.ts:39](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L39)
+Defined in: [components/Loader.ts:33](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L33)
 
 #### Parameters
 
@@ -32,52 +28,59 @@ Defined in:
 
 ## Methods
 
-### start()
+### setProgress()
 
-> **start**(): `void`
+> **setProgress**(`percent`): `void`
 
-Defined in:
-[Loader.ts:87](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L87)
+Defined in: [components/Loader.ts:159](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L159)
 
-Starts the loader by appending it to the specified container.
+#### Parameters
+
+##### percent
+
+`number`
 
 #### Returns
 
 `void`
 
----
+***
+
+### start()
+
+> **start**(): `void`
+
+Defined in: [components/Loader.ts:165](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L165)
+
+#### Returns
+
+`void`
+
+***
 
 ### stop()
 
 > **stop**(): `void`
 
-Defined in:
-[Loader.ts:96](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L96)
-
-Stops the loader by removing it from the DOM.
+Defined in: [components/Loader.ts:171](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L171)
 
 #### Returns
 
 `void`
 
----
+***
 
 ### update()
 
 > **update**(`_options`): `void`
 
-Defined in:
-[Loader.ts:104](https://github.com/The-Node-Forge/loader-kit/blob/220bcf6690e87aca0c79a3e719ffe91471131ad2/src/components/Loader.ts#L104)
-
-Updates the loader with new configuration options.
+Defined in: [components/Loader.ts:175](https://github.com/The-Node-Forge/loader-kit/blob/1145f50a67a91801f92275bbcccb06a23e0f3095/src/components/Loader.ts#L175)
 
 #### Parameters
 
 ##### \_options
 
 `Partial`\<`LoaderOptions`\>
-
-Partial options to update the loader.
 
 #### Returns
 
